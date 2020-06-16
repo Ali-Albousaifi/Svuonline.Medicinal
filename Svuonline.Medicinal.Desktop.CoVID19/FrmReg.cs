@@ -303,7 +303,6 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
                 await Task.Delay(3000);
                 lblMsgBox.Visible = false;
             }
-
         }
         private void TxtBoxPasswordConfirm_Validating(object sender, CancelEventArgs e)
         {
@@ -330,13 +329,11 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
                 }
             }
         }
-
         private void GoRegBtn_Click(object sender, EventArgs e)
         {
             LoginPanel.Visible = false;
             RegPanel.Visible = true;
         }
-
         private void ImgBtnBack_Click(object sender, EventArgs e)
         {
             LoginPanel.Visible = true;

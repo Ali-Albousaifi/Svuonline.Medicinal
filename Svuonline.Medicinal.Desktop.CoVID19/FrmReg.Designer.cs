@@ -39,10 +39,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblMsgBox = new System.Windows.Forms.Label();
+            this.LoginPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.GoRegBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.RegPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.BtnReg = new Guna.UI2.WinForms.Guna2Button();
             this.CombBoxUserRole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ImgBtnBack = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,21 +55,16 @@
             this.TxtBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.TxtBoxUserEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.TxtBoxScreenUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.BtnReg = new Guna.UI2.WinForms.Guna2Button();
-            this.LoginPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.GoRegBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBoxerrorProvider)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            this.LoginPanel.SuspendLayout();
+            this.RegPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.RegPanel.SuspendLayout();
-            this.LoginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TxtBoxerrorProvider
@@ -177,29 +177,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(597, 529);
             this.guna2Panel2.TabIndex = 7;
             // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(15, 15);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(75, 72);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 12;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-105, 95);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(464, 464);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 8;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // lblMsgBox
             // 
             this.lblMsgBox.BackColor = System.Drawing.Color.Transparent;
@@ -211,6 +188,138 @@
             this.lblMsgBox.TabIndex = 13;
             this.lblMsgBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblMsgBox.Visible = false;
+            // 
+            // LoginPanel
+            // 
+            this.LoginPanel.BackColor = System.Drawing.Color.Transparent;
+            this.LoginPanel.Controls.Add(this.GoRegBtn);
+            this.LoginPanel.Controls.Add(this.guna2Button1);
+            this.LoginPanel.Controls.Add(this.label5);
+            this.LoginPanel.Controls.Add(this.guna2TextBox2);
+            this.LoginPanel.Controls.Add(this.guna2TextBox3);
+            this.LoginPanel.Location = new System.Drawing.Point(256, 15);
+            this.LoginPanel.Name = "LoginPanel";
+            this.LoginPanel.ShadowDecoration.Parent = this.LoginPanel;
+            this.LoginPanel.Size = new System.Drawing.Size(338, 514);
+            this.LoginPanel.TabIndex = 17;
+            this.LoginPanel.UseTransparentBackground = true;
+            // 
+            // GoRegBtn
+            // 
+            this.GoRegBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
+            this.GoRegBtn.BorderRadius = 5;
+            this.GoRegBtn.BorderThickness = 1;
+            this.GoRegBtn.CheckedState.Parent = this.GoRegBtn;
+            this.GoRegBtn.CustomImages.Parent = this.GoRegBtn;
+            this.GoRegBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
+            this.GoRegBtn.Font = new System.Drawing.Font("AdvertisingExtraBold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.GoRegBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(52)))), ((int)(((byte)(131)))));
+            this.GoRegBtn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
+            this.GoRegBtn.HoverState.ForeColor = System.Drawing.Color.White;
+            this.GoRegBtn.HoverState.Parent = this.GoRegBtn;
+            this.GoRegBtn.Location = new System.Drawing.Point(38, 432);
+            this.GoRegBtn.Name = "GoRegBtn";
+            this.GoRegBtn.PressedColor = System.Drawing.Color.Empty;
+            this.GoRegBtn.ShadowDecoration.Parent = this.GoRegBtn;
+            this.GoRegBtn.Size = new System.Drawing.Size(270, 53);
+            this.GoRegBtn.TabIndex = 14;
+            this.GoRegBtn.Text = "ليس لديك حساب؟  سجّــل";
+            this.GoRegBtn.Click += new System.EventHandler(this.GoRegBtn_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(221)))), ((int)(((byte)(216)))));
+            this.guna2Button1.BorderRadius = 5;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.guna2Button1.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
+            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
+            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(47, 308);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(130, 45);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Text = "دخــول";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("AdvertisingBold", 18F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(221)))), ((int)(((byte)(216)))));
+            this.label5.Location = new System.Drawing.Point(140, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(185, 36);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "تسجيل الدخـول";
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.guna2TextBox2.BorderRadius = 2;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.guna2TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconLeft")));
+            this.guna2TextBox2.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TextBox2.Location = new System.Drawing.Point(47, 244);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
+            this.guna2TextBox2.PlaceholderText = "كلمة المرور";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Size = new System.Drawing.Size(270, 35);
+            this.guna2TextBox2.TabIndex = 11;
+            this.guna2TextBox2.UseSystemPasswordChar = true;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.guna2TextBox3.BorderRadius = 2;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(47, 180);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
+            this.guna2TextBox3.PlaceholderText = "البريد الإلكتروني";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Size = new System.Drawing.Size(270, 35);
+            this.guna2TextBox3.TabIndex = 9;
             // 
             // RegPanel
             // 
@@ -230,6 +339,28 @@
             this.RegPanel.TabIndex = 14;
             this.RegPanel.UseTransparentBackground = true;
             this.RegPanel.Visible = false;
+            // 
+            // BtnReg
+            // 
+            this.BtnReg.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
+            this.BtnReg.BorderRadius = 5;
+            this.BtnReg.BorderThickness = 1;
+            this.BtnReg.CheckedState.Parent = this.BtnReg;
+            this.BtnReg.CustomImages.Parent = this.BtnReg;
+            this.BtnReg.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
+            this.BtnReg.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BtnReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(243)))));
+            this.BtnReg.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
+            this.BtnReg.HoverState.ForeColor = System.Drawing.Color.White;
+            this.BtnReg.HoverState.Parent = this.BtnReg;
+            this.BtnReg.Location = new System.Drawing.Point(47, 440);
+            this.BtnReg.Name = "BtnReg";
+            this.BtnReg.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
+            this.BtnReg.ShadowDecoration.Parent = this.BtnReg;
+            this.BtnReg.Size = new System.Drawing.Size(130, 45);
+            this.BtnReg.TabIndex = 13;
+            this.BtnReg.Text = "تسجـيـل";
+            this.BtnReg.Click += new System.EventHandler(this.BtnReg_Click);
             // 
             // CombBoxUserRole
             // 
@@ -449,159 +580,28 @@
             this.TxtBoxScreenUserName.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Common_MouseMove);
             this.TxtBoxScreenUserName.Validating += new System.ComponentModel.CancelEventHandler(this.Common_TxtBoxValidating);
             // 
-            // BtnReg
+            // guna2PictureBox2
             // 
-            this.BtnReg.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
-            this.BtnReg.BorderRadius = 5;
-            this.BtnReg.BorderThickness = 1;
-            this.BtnReg.CheckedState.Parent = this.BtnReg;
-            this.BtnReg.CustomImages.Parent = this.BtnReg;
-            this.BtnReg.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
-            this.BtnReg.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.BtnReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(243)))));
-            this.BtnReg.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
-            this.BtnReg.HoverState.ForeColor = System.Drawing.Color.White;
-            this.BtnReg.HoverState.Parent = this.BtnReg;
-            this.BtnReg.Location = new System.Drawing.Point(47, 440);
-            this.BtnReg.Name = "BtnReg";
-            this.BtnReg.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
-            this.BtnReg.ShadowDecoration.Parent = this.BtnReg;
-            this.BtnReg.Size = new System.Drawing.Size(130, 45);
-            this.BtnReg.TabIndex = 13;
-            this.BtnReg.Text = "تسجـيـل";
-            this.BtnReg.Click += new System.EventHandler(this.BtnReg_Click);
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.Location = new System.Drawing.Point(15, 15);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(75, 72);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 12;
+            this.guna2PictureBox2.TabStop = false;
             // 
-            // LoginPanel
+            // guna2PictureBox1
             // 
-            this.LoginPanel.BackColor = System.Drawing.Color.Transparent;
-            this.LoginPanel.Controls.Add(this.GoRegBtn);
-            this.LoginPanel.Controls.Add(this.guna2Button1);
-            this.LoginPanel.Controls.Add(this.label5);
-            this.LoginPanel.Controls.Add(this.guna2TextBox2);
-            this.LoginPanel.Controls.Add(this.guna2TextBox3);
-            this.LoginPanel.Location = new System.Drawing.Point(256, 15);
-            this.LoginPanel.Name = "LoginPanel";
-            this.LoginPanel.ShadowDecoration.Parent = this.LoginPanel;
-            this.LoginPanel.Size = new System.Drawing.Size(338, 514);
-            this.LoginPanel.TabIndex = 17;
-            this.LoginPanel.UseTransparentBackground = true;
-            // 
-            // GoRegBtn
-            // 
-            this.GoRegBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
-            this.GoRegBtn.BorderRadius = 5;
-            this.GoRegBtn.BorderThickness = 1;
-            this.GoRegBtn.CheckedState.Parent = this.GoRegBtn;
-            this.GoRegBtn.CustomImages.Parent = this.GoRegBtn;
-            this.GoRegBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
-            this.GoRegBtn.Font = new System.Drawing.Font("AdvertisingExtraBold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.GoRegBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(52)))), ((int)(((byte)(131)))));
-            this.GoRegBtn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
-            this.GoRegBtn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.GoRegBtn.HoverState.Parent = this.GoRegBtn;
-            this.GoRegBtn.Location = new System.Drawing.Point(38, 432);
-            this.GoRegBtn.Name = "GoRegBtn";
-            this.GoRegBtn.PressedColor = System.Drawing.Color.Empty;
-            this.GoRegBtn.ShadowDecoration.Parent = this.GoRegBtn;
-            this.GoRegBtn.Size = new System.Drawing.Size(270, 53);
-            this.GoRegBtn.TabIndex = 14;
-            this.GoRegBtn.Text = "ليس لديك حساب؟  سجّــل";
-            this.GoRegBtn.Click += new System.EventHandler(this.GoRegBtn_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(221)))), ((int)(((byte)(216)))));
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2Button1.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(47, 308);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(130, 45);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Text = "دخــول";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("AdvertisingBold", 18F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(221)))), ((int)(((byte)(216)))));
-            this.label5.Location = new System.Drawing.Point(140, 116);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 36);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "تسجيل الدخـول";
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox2.BorderRadius = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconLeft")));
-            this.guna2TextBox2.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TextBox2.Location = new System.Drawing.Point(47, 244);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
-            this.guna2TextBox2.PlaceholderText = "كلمة المرور";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(270, 35);
-            this.guna2TextBox2.TabIndex = 11;
-            this.guna2TextBox2.UseSystemPasswordChar = true;
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox3.BorderRadius = 2;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(47, 180);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
-            this.guna2TextBox3.PlaceholderText = "البريد الإلكتروني";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(270, 35);
-            this.guna2TextBox3.TabIndex = 9;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-105, 95);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(464, 464);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 8;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // FrmReg
             // 
@@ -621,12 +621,12 @@
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.RegPanel.ResumeLayout(false);
-            this.RegPanel.PerformLayout();
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
+            this.RegPanel.ResumeLayout(false);
+            this.RegPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
