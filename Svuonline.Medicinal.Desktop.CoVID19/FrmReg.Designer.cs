@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation4 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReg));
             this.TxtBoxerrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.BtnExit = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lblCovID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,13 +41,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblMsgBox = new System.Windows.Forms.Label();
             this.LoginPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GoRegBtn = new Guna.UI2.WinForms.Guna2Button();
             this.BtnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtLoginPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.TxtLoginUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblMsgBox = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.RegPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.BtnReg = new Guna.UI2.WinForms.Guna2Button();
@@ -62,7 +63,6 @@
             this.DragControlPanel2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.DragControlPanel1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.ShadowForm = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.BtnExit = new Guna.UI2.WinForms.Guna2Button();
             this.FrmElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TxtBoxerrorProvider)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -98,6 +98,29 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(423, 529);
             this.guna2Panel1.TabIndex = 6;
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.Animated = true;
+            this.BtnExit.BorderColor = System.Drawing.Color.White;
+            this.BtnExit.CheckedState.Parent = this.BtnExit;
+            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnExit.CustomImages.Parent = this.BtnExit;
+            this.PanelTransition.SetDecoration(this.BtnExit, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.BtnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(178)))));
+            this.BtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnExit.ForeColor = System.Drawing.Color.White;
+            this.BtnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(180)))));
+            this.BtnExit.HoverState.Parent = this.BtnExit;
+            this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
+            this.BtnExit.ImageSize = new System.Drawing.Size(15, 15);
+            this.BtnExit.Location = new System.Drawing.Point(395, 6);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(178)))));
+            this.BtnExit.ShadowDecoration.Parent = this.BtnExit;
+            this.BtnExit.Size = new System.Drawing.Size(22, 22);
+            this.BtnExit.TabIndex = 14;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // label4
             // 
@@ -193,6 +216,19 @@
             this.guna2Panel2.Size = new System.Drawing.Size(597, 529);
             this.guna2Panel2.TabIndex = 7;
             // 
+            // lblMsgBox
+            // 
+            this.lblMsgBox.BackColor = System.Drawing.Color.Transparent;
+            this.PanelTransition.SetDecoration(this.lblMsgBox, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblMsgBox.Font = new System.Drawing.Font("AdvertisingLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblMsgBox.Location = new System.Drawing.Point(93, 10);
+            this.lblMsgBox.Name = "lblMsgBox";
+            this.lblMsgBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMsgBox.Size = new System.Drawing.Size(495, 33);
+            this.lblMsgBox.TabIndex = 13;
+            this.lblMsgBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMsgBox.Visible = false;
+            // 
             // LoginPanel
             // 
             this.LoginPanel.BackColor = System.Drawing.Color.Transparent;
@@ -274,7 +310,7 @@
             this.TxtLoginPassword.BorderRadius = 2;
             this.TxtLoginPassword.Cursor = System.Windows.Forms.Cursors.Default;
             this.PanelTransition.SetDecoration(this.TxtLoginPassword, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TxtLoginPassword.DefaultText = "";
+            this.TxtLoginPassword.DefaultText = "asd";
             this.TxtLoginPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TxtLoginPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtLoginPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -297,6 +333,7 @@
             this.TxtLoginPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
             this.TxtLoginPassword.PlaceholderText = "كلمة المرور";
             this.TxtLoginPassword.SelectedText = "";
+            this.TxtLoginPassword.SelectionStart = 3;
             this.TxtLoginPassword.ShadowDecoration.Parent = this.TxtLoginPassword;
             this.TxtLoginPassword.Size = new System.Drawing.Size(270, 35);
             this.TxtLoginPassword.TabIndex = 11;
@@ -315,7 +352,7 @@
             this.TxtLoginUserName.BorderRadius = 2;
             this.TxtLoginUserName.Cursor = System.Windows.Forms.Cursors.Default;
             this.PanelTransition.SetDecoration(this.TxtLoginUserName, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TxtLoginUserName.DefaultText = "";
+            this.TxtLoginUserName.DefaultText = "ali@tromail.com";
             this.TxtLoginUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TxtLoginUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtLoginUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -336,6 +373,7 @@
             this.TxtLoginUserName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
             this.TxtLoginUserName.PlaceholderText = "البريد الإلكتروني";
             this.TxtLoginUserName.SelectedText = "";
+            this.TxtLoginUserName.SelectionStart = 15;
             this.TxtLoginUserName.ShadowDecoration.Parent = this.TxtLoginUserName;
             this.TxtLoginUserName.Size = new System.Drawing.Size(270, 35);
             this.TxtLoginUserName.TabIndex = 9;
@@ -346,19 +384,6 @@
             this.TxtLoginUserName.MouseHover += new System.EventHandler(this.Common_MouseHover);
             this.TxtLoginUserName.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Common_MouseMove);
             this.TxtLoginUserName.Validating += new System.ComponentModel.CancelEventHandler(this.TxtLoginUserName_Validating);
-            // 
-            // lblMsgBox
-            // 
-            this.lblMsgBox.BackColor = System.Drawing.Color.Transparent;
-            this.PanelTransition.SetDecoration(this.lblMsgBox, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.lblMsgBox.Font = new System.Drawing.Font("AdvertisingLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblMsgBox.Location = new System.Drawing.Point(93, 10);
-            this.lblMsgBox.Name = "lblMsgBox";
-            this.lblMsgBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblMsgBox.Size = new System.Drawing.Size(495, 33);
-            this.lblMsgBox.TabIndex = 13;
-            this.lblMsgBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblMsgBox.Visible = false;
             // 
             // guna2PictureBox2
             // 
@@ -658,22 +683,22 @@
             // 
             this.PanelTransition.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.PanelTransition.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.PanelTransition.DefaultAnimation = animation4;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.PanelTransition.DefaultAnimation = animation1;
             // 
             // DragControlPanel2
             // 
@@ -686,29 +711,6 @@
             // ShadowForm
             // 
             this.ShadowForm.Load += new System.EventHandler(this.FrmReg_Load);
-            // 
-            // BtnExit
-            // 
-            this.BtnExit.Animated = true;
-            this.BtnExit.BorderColor = System.Drawing.Color.White;
-            this.BtnExit.CheckedState.Parent = this.BtnExit;
-            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnExit.CustomImages.Parent = this.BtnExit;
-            this.PanelTransition.SetDecoration(this.BtnExit, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.BtnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(178)))));
-            this.BtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnExit.ForeColor = System.Drawing.Color.White;
-            this.BtnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(180)))));
-            this.BtnExit.HoverState.Parent = this.BtnExit;
-            this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
-            this.BtnExit.ImageSize = new System.Drawing.Size(15, 15);
-            this.BtnExit.Location = new System.Drawing.Point(395, 6);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(178)))));
-            this.BtnExit.ShadowDecoration.Parent = this.BtnExit;
-            this.BtnExit.Size = new System.Drawing.Size(22, 22);
-            this.BtnExit.TabIndex = 14;
-            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // FrmElipse
             // 
@@ -725,6 +727,7 @@
             this.PanelTransition.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Font = new System.Drawing.Font("AdvertisingBold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReg";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;

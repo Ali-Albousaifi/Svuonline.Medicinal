@@ -417,7 +417,13 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
                     BtnLogin.Focus();
                     await Task.Delay(3000);
                     lblMsgBox.Visible = false;
-                    return;
+                    //return;
+                    Form frmMain = new FrmMainApp();
+                    frmMain.Show();
+                    this.Visible = false;
+                    this.Hide();
+                    //this.Close();
+                    //this.Dispose();
                 }
                 else
                 {
