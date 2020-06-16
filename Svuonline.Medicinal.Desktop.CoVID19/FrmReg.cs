@@ -74,6 +74,43 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
             }
 
         }
+        private void TxtBoxScreenUserName_Enter(object sender, EventArgs e)
+        {
+            InputLanguage OriginalDefaultLanguage = InputLanguage.DefaultInputLanguage;
+            if (InputLanguage.InstalledInputLanguages.Count == 1)
+                return;
+           if(!InputLanguage.CurrentInputLanguage.Culture.Name.Contains("ar"))
+            {
+                // Get index of current Input Language
+                int currentLang = InputLanguage.InstalledInputLanguages.IndexOf(InputLanguage.CurrentInputLanguage);
+                // Calculate next Input Language
+                InputLanguage nextLang = ++currentLang == InputLanguage.InstalledInputLanguages.Count ?
+                   InputLanguage.InstalledInputLanguages[0] : InputLanguage.InstalledInputLanguages[currentLang];
+                //TxtBoxUserEmail.Text = nextLang.LayoutName;
+                //TxtBoxUserEmail.Text = InputLanguage.CurrentInputLanguage.LayoutName;
+                // Change current Language to the calculated:
+                InputLanguage InputLang = nextLang;
+                // Check is this Language really installed. Raise exception to warn if it is not:
+                if (InputLanguage.InstalledInputLanguages.IndexOf(InputLang) == -1)
+                    InputLanguage.CurrentInputLanguage = OriginalDefaultLanguage;
+                // InputLAnguage changes here:
+                InputLanguage.CurrentInputLanguage = InputLang;
+                //TxtBoxUserEmail.Text = InputLanguage.CurrentInputLanguage.Culture.Name;
+            }
+        }
+        private void TxtBoxScreenUserName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            UserInterfaceValidatorObj.InputcharCheck(e, "TxtBoxScreenUserName");
+        }
+        private void TxtBoxUserEmail_Enter(object sender, EventArgs e)
+        {
+            InputLanguage OriginalDefaultLanguage = InputLanguage.DefaultInputLanguage;
+            InputLanguage.CurrentInputLanguage = OriginalDefaultLanguage;
+        }
+        private void TxtBoxUserEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            UserInterfaceValidatorObj.InputcharCheck(e, "TxtBoxUserEmail");
+        }
         private async void TxtBoxUserEmail_Validating(object sender, CancelEventArgs e)
         {
             Common_TxtBoxValidating(sender, e);
@@ -90,14 +127,6 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
                     lblMsgBox.Visible = false;
                 }
             }
-        }
-        private void TxtBoxScreenUserName_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            UserInterfaceValidatorObj.InputcharCheck(e, "TxtBoxScreenUserName");
-        }
-        private void TxtBoxUserEmail_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            UserInterfaceValidatorObj.InputcharCheck(e, "TxtBoxUserEmail");
         }
         private void Common_MouseEnter(object sender, EventArgs e)
         {
@@ -162,29 +191,6 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
                 }
             }
         }
-        private void TxtBoxScreenUserName_Enter(object sender, EventArgs e)
-        {
-            InputLanguage OriginalDefaultLanguage = InputLanguage.DefaultInputLanguage;
-            if (InputLanguage.InstalledInputLanguages.Count == 1)
-                return;
-            // Get index of current Input Language
-            int currentLang = InputLanguage.InstalledInputLanguages.IndexOf(InputLanguage.CurrentInputLanguage);
-            // Calculate next Input Language
-            InputLanguage nextLang = ++currentLang == InputLanguage.InstalledInputLanguages.Count ?
-               InputLanguage.InstalledInputLanguages[0] : InputLanguage.InstalledInputLanguages[currentLang];
-            // Change current Language to the calculated:
-            InputLanguage InputLang = nextLang;
-            // Check is this Language really installed. Raise exception to warn if it is not:
-            if (InputLanguage.InstalledInputLanguages.IndexOf(InputLang) == -1)
-                InputLanguage.CurrentInputLanguage = OriginalDefaultLanguage;
-            // InputLAnguage changes here:
-            InputLanguage.CurrentInputLanguage = InputLang;
-        }
-        private void TxtBoxUserEmail_Enter(object sender, EventArgs e)
-        {
-            InputLanguage OriginalDefaultLanguage = InputLanguage.DefaultInputLanguage;
-            InputLanguage.CurrentInputLanguage = OriginalDefaultLanguage;
-        }
         internal void TxtBoxPasswordConfirmCheck()
         {
             if (TxtBoxPasswordConfirm.Text.Trim() != TxtBoxPassword.Text.Trim() && !String.IsNullOrWhiteSpace(TxtBoxPassword.Text.Trim()))
@@ -221,6 +227,31 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
             {
                 TxtBoxPasswordConfirmCheck();
                 IsClearing = false;
+            }
+        }
+        private void TxtBoxPasswordConfirm_Validating(object sender, CancelEventArgs e)
+        {
+            if (!String.IsNullOrWhiteSpace(TxtBoxPassword.Text.Trim()))
+            {
+                if (string.IsNullOrWhiteSpace(TxtBoxPasswordConfirm.Text.Trim()))
+                {
+                    TxtBoxPasswordConfirm.Focus();
+                    TxtBoxerrorProvider.SetError(TxtBoxPasswordConfirm, ClsAppMsgs.RequiredFieldErrorMsg);
+                    TxtBoxPasswordConfirm.BackColor = System.Drawing.Color.Red;
+                    TxtBoxPasswordConfirm.BorderThickness = 2;
+                    TxtBoxPasswordConfirm.BorderColor = Color.Red;
+                    TxtBoxPasswordConfirm.PlaceholderForeColor = ColorTranslator.FromHtml("#ff0033");
+                    TxtBoxPasswordConfirm.Font = new Font("Changa", 11, FontStyle.Bold);
+                }
+                else
+                {
+                    TxtBoxerrorProvider.Clear();
+                    TxtBoxPasswordConfirm.BorderThickness = 1;
+                    TxtBoxPasswordConfirm.BorderColor = ColorTranslator.FromHtml("#0CBCB2");
+                    TxtBoxPasswordConfirm.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+                    TxtBoxPasswordConfirm.ForeColor = ColorTranslator.FromHtml("#0CBCB2");
+                    TxtBoxPasswordConfirm.Font = new Font("Changa", 9, FontStyle.Regular);
+                }
             }
         }
         private async void BtnReg_Click(object sender, EventArgs e)
@@ -304,40 +335,20 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
                 lblMsgBox.Visible = false;
             }
         }
-        private void TxtBoxPasswordConfirm_Validating(object sender, CancelEventArgs e)
-        {
-            if (!String.IsNullOrWhiteSpace(TxtBoxPassword.Text.Trim()))
-            {
-                if (string.IsNullOrWhiteSpace(TxtBoxPasswordConfirm.Text.Trim()))
-                {
-                    TxtBoxPasswordConfirm.Focus();
-                    TxtBoxerrorProvider.SetError(TxtBoxPasswordConfirm, ClsAppMsgs.RequiredFieldErrorMsg);
-                    TxtBoxPasswordConfirm.BackColor = System.Drawing.Color.Red;
-                    TxtBoxPasswordConfirm.BorderThickness = 2;
-                    TxtBoxPasswordConfirm.BorderColor = Color.Red;
-                    TxtBoxPasswordConfirm.PlaceholderForeColor = ColorTranslator.FromHtml("#ff0033");
-                    TxtBoxPasswordConfirm.Font = new Font("Changa", 11, FontStyle.Bold);
-                }
-                else
-                {
-                    TxtBoxerrorProvider.Clear();
-                    TxtBoxPasswordConfirm.BorderThickness = 1;
-                    TxtBoxPasswordConfirm.BorderColor = ColorTranslator.FromHtml("#0CBCB2");
-                    TxtBoxPasswordConfirm.BackColor = ColorTranslator.FromHtml("#FFFFFF");
-                    TxtBoxPasswordConfirm.ForeColor = ColorTranslator.FromHtml("#0CBCB2");
-                    TxtBoxPasswordConfirm.Font = new Font("Changa", 9, FontStyle.Regular);
-                }
-            }
-        }
         private void GoRegBtn_Click(object sender, EventArgs e)
         {
-            LoginPanel.Visible = false;
-            RegPanel.Visible = true;
+            PanelTransition.Hide(LoginPanel);
+            PanelTransition.Show(RegPanel);
         }
         private void ImgBtnBack_Click(object sender, EventArgs e)
         {
-            LoginPanel.Visible = true;
-            RegPanel.Visible = false;
+            PanelTransition.Hide(RegPanel);
+            PanelTransition.Show(LoginPanel);
+        }
+
+        private void FrmReg_Load(object sender, EventArgs e)
+        {
+            ShadowForm.SetShadowForm(this);
         }
     }
 }
