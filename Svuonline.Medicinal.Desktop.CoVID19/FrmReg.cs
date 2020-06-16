@@ -345,10 +345,111 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
             PanelTransition.Hide(RegPanel);
             PanelTransition.Show(LoginPanel);
         }
-
         private void FrmReg_Load(object sender, EventArgs e)
         {
             ShadowForm.SetShadowForm(this);
+        }
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private async void BtnLogin_Click(object sender, EventArgs e)
+        {
+            if ( string.IsNullOrWhiteSpace(TxtLoginUserName.Text.Trim()) || string.IsNullOrWhiteSpace(TxtLoginPassword.Text.Trim()) )
+            {
+                lblMsgBox.Text = ClsAppMsgs.EmptyFielsAlertMsg;
+                lblMsgBox.BackColor = ColorTranslator.FromHtml("#ffedf6");
+                lblMsgBox.ForeColor = ColorTranslator.FromHtml("#d20051");
+                BtnLogin.Focus();
+                lblMsgBox.Visible = true;
+                await Task.Delay(3000);
+                lblMsgBox.Visible = false;
+                return;
+            }
+            else
+            {
+                String TxtBoxUserEmailValue = TxtLoginUserName.Text.Trim();
+                String TxtBoxPasswordValue = TxtLoginPassword.Text.Trim();
+                UserAccount userAccountObj = new UserAccount
+                {
+                    UserEmailAddress = TxtBoxUserEmailValue,
+                    Password = TxtBoxPasswordValue,
+                };
+                try
+                {
+                    // ClsUserAccountsServices.Insert(userAccountObj);
+                    ClsUserAccountsServices.UserAccountExist(userAccountObj);
+                }
+                catch
+                {
+                    lblMsgBox.Text = ClsAppMsgs.LoginErrorOccurredMsg;
+                    lblMsgBox.BackColor = ColorTranslator.FromHtml("#ffedf6");
+                    lblMsgBox.ForeColor = ColorTranslator.FromHtml("#d20051");
+                    lblMsgBox.Visible = true;
+                    BtnLogin.Focus();
+                    await Task.Delay(3000);
+                    lblMsgBox.Visible = false;
+                }
+            }
+            if (!ClsUserAccountsServices.EmailAlreadyExists)
+            {
+                // UserEmailNotExistsMsg
+                lblMsgBox.Text = ClsAppMsgs.UserEmailNotExistsMsg;
+                lblMsgBox.BackColor = ColorTranslator.FromHtml("#fff5cc");
+                lblMsgBox.ForeColor = ColorTranslator.FromHtml("#856404");
+                lblMsgBox.Visible = true;
+                BtnLogin.Focus();
+                await Task.Delay(3000);
+                lblMsgBox.Visible = false;
+                ClsUserAccountsServices.EmailAlreadyExists = false;
+                return;
+            }
+            else
+            {
+                if (ClsUserAccountsServices.UserCanLogin == true)
+                {
+                    ClsUserAccountsServices.UserCanLogin = false;
+                    lblMsgBox.Text = "دخــــــول";
+                    lblMsgBox.BackColor = ColorTranslator.FromHtml("#fff5cc");
+                    lblMsgBox.ForeColor = ColorTranslator.FromHtml("#856404");
+                    lblMsgBox.Visible = true;
+                    BtnLogin.Focus();
+                    await Task.Delay(3000);
+                    lblMsgBox.Visible = false;
+                    return;
+                }
+                else
+                {
+                    lblMsgBox.Text = ClsAppMsgs.UserCanNotLoginMsg;
+                    lblMsgBox.BackColor = ColorTranslator.FromHtml("#fff5cc");
+                    lblMsgBox.ForeColor = ColorTranslator.FromHtml("#856404");
+                    lblMsgBox.Visible = true;
+                    BtnLogin.Focus();
+                    await Task.Delay(3000);
+                    lblMsgBox.Visible = false;
+                    ClsUserAccountsServices.EmailAlreadyExists = false;
+                    ClsUserAccountsServices.UserCanLogin = false;
+                    return;
+                }
+            }
+        }
+        private async void TxtLoginUserName_Validating(object sender, CancelEventArgs e)
+        {
+            Common_TxtBoxValidating(sender, e);
+            if (!string.IsNullOrWhiteSpace(TxtLoginUserName.Text.Trim()))
+            {
+                if (!UserInterfaceValidatorObj.EmailValidator(TxtLoginUserName.Text.Trim()))
+                {
+                    lblMsgBox.Text = ClsAppMsgs.EmailEntryIncorrectMsg;
+                    lblMsgBox.BackColor = ColorTranslator.FromHtml("#ffedf6");
+                    lblMsgBox.ForeColor = ColorTranslator.FromHtml("#d20051");
+                    lblMsgBox.Visible = true;
+                    TxtLoginUserName.Focus();
+                    await Task.Delay(3000);
+                    lblMsgBox.Visible = false;
+                }
+            }
         }
     }
 }

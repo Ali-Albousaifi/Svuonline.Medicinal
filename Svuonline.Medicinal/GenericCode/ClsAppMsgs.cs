@@ -18,5 +18,9 @@ namespace Svuonline.Medicinal.GenericCode
         public static String EmailEntryIncorrectMsg = "صيغة الإيميل التي تم إدخـالها غـير صحيحة..!";
         public static String UserNameAlreadyExistsMsg = "اسم المستخدم المدخــل موجود مسبقاً";
         public static String EmailAlreadyExistsMsg = "الإيميل المدخــل موجود مسبقاً";
+        public static String UserEmailNotExistsMsg = "المستخـدم غـير موجـود";
+        public static String UserCanNotLoginMsg = "الرجـــاء التــأكد من بيــانـات الدخـول";
+        public static String LoginErrorOccurredMsg = "حدثت مشكلة أثناء تسجيل الدخـول";
+
     }
 }
