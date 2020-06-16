@@ -41,7 +41,7 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
             {
                 DisableButton();
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(29, 141, 141);
+                currentBtn.BackColor = Color.FromArgb(12, 188, 178); 
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -58,7 +58,7 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(29, 141, 141);
+                currentBtn.BackColor = Color.FromArgb(12, 188, 178);
                 currentBtn.ForeColor = Color.Snow;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.FromArgb(230, 0, 112);

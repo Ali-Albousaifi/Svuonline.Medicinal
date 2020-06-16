@@ -56,7 +56,7 @@
             // 
             // SideMenuPanel
             // 
-            this.SideMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SideMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(178)))));
             this.SideMenuPanel.Controls.Add(this.BtnUserInfo);
             this.SideMenuPanel.Controls.Add(this.BtnPatientData);
             this.SideMenuPanel.Controls.Add(this.LogoPanel);
@@ -142,7 +142,7 @@
             // 
             // TitleBarPanel
             // 
-            this.TitleBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TitleBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
             this.TitleBarPanel.Controls.Add(this.BtnExit);
             this.TitleBarPanel.Controls.Add(this.lblTitleChildForm);
             this.TitleBarPanel.Controls.Add(this.iconCurrentChildForm);
@@ -155,7 +155,7 @@
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
             this.iconCurrentChildForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
@@ -169,7 +169,7 @@
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.Font = new System.Drawing.Font("AdvertisingExtraBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Snow;
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Azure;
             this.lblTitleChildForm.Location = new System.Drawing.Point(37, 19);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
             this.lblTitleChildForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -189,7 +189,7 @@
             // 
             // ShadowPanel
             // 
-            this.ShadowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(209)))), ((int)(((byte)(210)))));
+            this.ShadowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(221)))), ((int)(((byte)(216)))));
             this.ShadowPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.ShadowPanel.Location = new System.Drawing.Point(220, 80);
             this.ShadowPanel.Name = "ShadowPanel";
@@ -226,16 +226,16 @@
             this.BtnExit.CheckedState.Parent = this.BtnExit;
             this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnExit.CustomImages.Parent = this.BtnExit;
-            this.BtnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.BtnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
             this.BtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnExit.ForeColor = System.Drawing.Color.White;
-            this.BtnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.BtnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
             this.BtnExit.HoverState.Parent = this.BtnExit;
             this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
             this.BtnExit.ImageSize = new System.Drawing.Size(18, 18);
             this.BtnExit.Location = new System.Drawing.Point(9, 8);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.BtnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
             this.BtnExit.ShadowDecoration.Parent = this.BtnExit;
             this.BtnExit.Size = new System.Drawing.Size(22, 22);
             this.BtnExit.TabIndex = 15;
