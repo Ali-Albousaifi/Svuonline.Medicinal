@@ -29,175 +29,185 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPatientData));
-            this.TxtLoginUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TxtFirstName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TxtPatientAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TxtLastName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TxtMidName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TxtBoxChronicDiseases = new Guna.UI2.WinForms.Guna2TextBox();
             this.PatientPictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox3 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox4 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox5 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox6 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox7 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.BtnReg = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.ChkBoxCough = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.ChkBoxCold = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.ChkBoxSorethroat = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.ChkBoxBodyPain = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.ChkBoxHeadache = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.ChkBoxFatigue = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.ChkBoxHeat = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.BtnClearFields = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnSaveData = new Guna.UI2.WinForms.Guna2Button();
+            this.lblPstientFrmMsgBox = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PatientPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // TxtLoginUserName
+            // TxtFirstName
             // 
-            this.TxtLoginUserName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.TxtLoginUserName.BorderRadius = 2;
-            this.TxtLoginUserName.Cursor = System.Windows.Forms.Cursors.Default;
-            this.TxtLoginUserName.DefaultText = "";
-            this.TxtLoginUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtLoginUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtLoginUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtLoginUserName.DisabledState.Parent = this.TxtLoginUserName;
-            this.TxtLoginUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtLoginUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.TxtLoginUserName.FocusedState.Parent = this.TxtLoginUserName;
-            this.TxtLoginUserName.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.TxtLoginUserName.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtLoginUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.TxtLoginUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.TxtLoginUserName.HoverState.Parent = this.TxtLoginUserName;
-            this.TxtLoginUserName.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.TxtLoginUserName.Location = new System.Drawing.Point(240, 15);
-            this.TxtLoginUserName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.TxtLoginUserName.Name = "TxtLoginUserName";
-            this.TxtLoginUserName.PasswordChar = '\0';
-            this.TxtLoginUserName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
-            this.TxtLoginUserName.PlaceholderText = "الاسم الأول";
-            this.TxtLoginUserName.SelectedText = "";
-            this.TxtLoginUserName.ShadowDecoration.Parent = this.TxtLoginUserName;
-            this.TxtLoginUserName.Size = new System.Drawing.Size(480, 35);
-            this.TxtLoginUserName.TabIndex = 10;
+            this.TxtFirstName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtFirstName.BorderRadius = 2;
+            this.TxtFirstName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TxtFirstName.DefaultText = "";
+            this.TxtFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtFirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtFirstName.DisabledState.Parent = this.TxtFirstName;
+            this.TxtFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtFirstName.FocusedState.Parent = this.TxtFirstName;
+            this.TxtFirstName.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtFirstName.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtFirstName.HoverState.Parent = this.TxtFirstName;
+            this.TxtFirstName.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtFirstName.Location = new System.Drawing.Point(240, 15);
+            this.TxtFirstName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TxtFirstName.Name = "TxtFirstName";
+            this.TxtFirstName.PasswordChar = '\0';
+            this.TxtFirstName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
+            this.TxtFirstName.PlaceholderText = "الاسم الأول";
+            this.TxtFirstName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxtFirstName.SelectedText = "";
+            this.TxtFirstName.ShadowDecoration.Parent = this.TxtFirstName;
+            this.TxtFirstName.Size = new System.Drawing.Size(480, 35);
+            this.TxtFirstName.TabIndex = 10;
+            this.TxtFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // guna2TextBox1
+            // TxtPatientAddress
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox1.BorderRadius = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(240, 138);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
-            this.guna2TextBox1.PlaceholderText = "العنوان";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(480, 35);
-            this.guna2TextBox1.TabIndex = 11;
+            this.TxtPatientAddress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtPatientAddress.BorderRadius = 2;
+            this.TxtPatientAddress.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TxtPatientAddress.DefaultText = "";
+            this.TxtPatientAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtPatientAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtPatientAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtPatientAddress.DisabledState.Parent = this.TxtPatientAddress;
+            this.TxtPatientAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtPatientAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtPatientAddress.FocusedState.Parent = this.TxtPatientAddress;
+            this.TxtPatientAddress.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtPatientAddress.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtPatientAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtPatientAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtPatientAddress.HoverState.Parent = this.TxtPatientAddress;
+            this.TxtPatientAddress.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtPatientAddress.Location = new System.Drawing.Point(240, 138);
+            this.TxtPatientAddress.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TxtPatientAddress.Name = "TxtPatientAddress";
+            this.TxtPatientAddress.PasswordChar = '\0';
+            this.TxtPatientAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
+            this.TxtPatientAddress.PlaceholderText = "العنوان";
+            this.TxtPatientAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxtPatientAddress.SelectedText = "";
+            this.TxtPatientAddress.ShadowDecoration.Parent = this.TxtPatientAddress;
+            this.TxtPatientAddress.Size = new System.Drawing.Size(480, 35);
+            this.TxtPatientAddress.TabIndex = 11;
+            this.TxtPatientAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // guna2TextBox2
+            // TxtLastName
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox2.BorderRadius = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(240, 97);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
-            this.guna2TextBox2.PlaceholderText = "اللقب";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(480, 35);
-            this.guna2TextBox2.TabIndex = 12;
+            this.TxtLastName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtLastName.BorderRadius = 2;
+            this.TxtLastName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TxtLastName.DefaultText = "";
+            this.TxtLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtLastName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtLastName.DisabledState.Parent = this.TxtLastName;
+            this.TxtLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtLastName.FocusedState.Parent = this.TxtLastName;
+            this.TxtLastName.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtLastName.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtLastName.HoverState.Parent = this.TxtLastName;
+            this.TxtLastName.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtLastName.Location = new System.Drawing.Point(240, 97);
+            this.TxtLastName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TxtLastName.Name = "TxtLastName";
+            this.TxtLastName.PasswordChar = '\0';
+            this.TxtLastName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
+            this.TxtLastName.PlaceholderText = "اللقب";
+            this.TxtLastName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxtLastName.SelectedText = "";
+            this.TxtLastName.ShadowDecoration.Parent = this.TxtLastName;
+            this.TxtLastName.Size = new System.Drawing.Size(480, 35);
+            this.TxtLastName.TabIndex = 12;
+            this.TxtLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // guna2TextBox3
+            // TxtMidName
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox3.BorderRadius = 2;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(240, 56);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
-            this.guna2TextBox3.PlaceholderText = "اسم الأب";
-            this.guna2TextBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(480, 35);
-            this.guna2TextBox3.TabIndex = 13;
+            this.TxtMidName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtMidName.BorderRadius = 2;
+            this.TxtMidName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TxtMidName.DefaultText = "";
+            this.TxtMidName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtMidName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtMidName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtMidName.DisabledState.Parent = this.TxtMidName;
+            this.TxtMidName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtMidName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtMidName.FocusedState.Parent = this.TxtMidName;
+            this.TxtMidName.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtMidName.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtMidName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtMidName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtMidName.HoverState.Parent = this.TxtMidName;
+            this.TxtMidName.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtMidName.Location = new System.Drawing.Point(240, 56);
+            this.TxtMidName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TxtMidName.Name = "TxtMidName";
+            this.TxtMidName.PasswordChar = '\0';
+            this.TxtMidName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
+            this.TxtMidName.PlaceholderText = "اسم الأب";
+            this.TxtMidName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxtMidName.SelectedText = "";
+            this.TxtMidName.ShadowDecoration.Parent = this.TxtMidName;
+            this.TxtMidName.Size = new System.Drawing.Size(480, 35);
+            this.TxtMidName.TabIndex = 13;
+            this.TxtMidName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // guna2TextBox4
+            // TxtBoxChronicDiseases
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox4.BorderRadius = 2;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(240, 179);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
-            this.guna2TextBox4.PlaceholderText = "الأمراض المزمنة";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(480, 35);
-            this.guna2TextBox4.TabIndex = 14;
+            this.TxtBoxChronicDiseases.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtBoxChronicDiseases.BorderRadius = 2;
+            this.TxtBoxChronicDiseases.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TxtBoxChronicDiseases.DefaultText = "";
+            this.TxtBoxChronicDiseases.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtBoxChronicDiseases.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtBoxChronicDiseases.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtBoxChronicDiseases.DisabledState.Parent = this.TxtBoxChronicDiseases;
+            this.TxtBoxChronicDiseases.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtBoxChronicDiseases.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtBoxChronicDiseases.FocusedState.Parent = this.TxtBoxChronicDiseases;
+            this.TxtBoxChronicDiseases.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.TxtBoxChronicDiseases.Font = new System.Drawing.Font("Changa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtBoxChronicDiseases.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.TxtBoxChronicDiseases.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtBoxChronicDiseases.HoverState.Parent = this.TxtBoxChronicDiseases;
+            this.TxtBoxChronicDiseases.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(225)))));
+            this.TxtBoxChronicDiseases.Location = new System.Drawing.Point(240, 179);
+            this.TxtBoxChronicDiseases.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TxtBoxChronicDiseases.Name = "TxtBoxChronicDiseases";
+            this.TxtBoxChronicDiseases.PasswordChar = '\0';
+            this.TxtBoxChronicDiseases.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
+            this.TxtBoxChronicDiseases.PlaceholderText = "الأمراض المزمنة";
+            this.TxtBoxChronicDiseases.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxtBoxChronicDiseases.SelectedText = "";
+            this.TxtBoxChronicDiseases.ShadowDecoration.Parent = this.TxtBoxChronicDiseases;
+            this.TxtBoxChronicDiseases.Size = new System.Drawing.Size(480, 35);
+            this.TxtBoxChronicDiseases.TabIndex = 14;
+            this.TxtBoxChronicDiseases.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // PatientPictureBox
             // 
@@ -219,180 +229,190 @@
             this.guna2Separator1.Size = new System.Drawing.Size(715, 10);
             this.guna2Separator1.TabIndex = 16;
             // 
-            // guna2CheckBox1
+            // ChkBoxCough
             // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2CheckBox1.ForeColor = System.Drawing.Color.DeepPink;
-            this.guna2CheckBox1.Location = new System.Drawing.Point(277, 237);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(174, 26);
-            this.guna2CheckBox1.TabIndex = 17;
-            this.guna2CheckBox1.Text = "هل تعاني من سعال؟";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 1;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.HotPink;
+            this.ChkBoxCough.AutoSize = true;
+            this.ChkBoxCough.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxCough.CheckedState.BorderRadius = 0;
+            this.ChkBoxCough.CheckedState.BorderThickness = 0;
+            this.ChkBoxCough.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxCough.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ChkBoxCough.ForeColor = System.Drawing.Color.DeepPink;
+            this.ChkBoxCough.Location = new System.Drawing.Point(277, 237);
+            this.ChkBoxCough.Name = "ChkBoxCough";
+            this.ChkBoxCough.Size = new System.Drawing.Size(174, 26);
+            this.ChkBoxCough.TabIndex = 17;
+            this.ChkBoxCough.Text = "هل تعاني من سعال؟";
+            this.ChkBoxCough.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChkBoxCough.UncheckedState.BorderRadius = 1;
+            this.ChkBoxCough.UncheckedState.BorderThickness = 1;
+            this.ChkBoxCough.UncheckedState.FillColor = System.Drawing.Color.HotPink;
             // 
-            // guna2CheckBox2
+            // ChkBoxCold
             // 
-            this.guna2CheckBox2.AutoSize = true;
-            this.guna2CheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox2.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox2.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox2.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2CheckBox2.ForeColor = System.Drawing.Color.DeepPink;
-            this.guna2CheckBox2.Location = new System.Drawing.Point(38, 272);
-            this.guna2CheckBox2.Name = "guna2CheckBox2";
-            this.guna2CheckBox2.Size = new System.Drawing.Size(208, 26);
-            this.guna2CheckBox2.TabIndex = 18;
-            this.guna2CheckBox2.Text = "هل تعاني من نزلات برد؟";
-            this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CheckBox2.UncheckedState.BorderRadius = 1;
-            this.guna2CheckBox2.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.HotPink;
+            this.ChkBoxCold.AutoSize = true;
+            this.ChkBoxCold.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxCold.CheckedState.BorderRadius = 0;
+            this.ChkBoxCold.CheckedState.BorderThickness = 0;
+            this.ChkBoxCold.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxCold.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ChkBoxCold.ForeColor = System.Drawing.Color.DeepPink;
+            this.ChkBoxCold.Location = new System.Drawing.Point(38, 272);
+            this.ChkBoxCold.Name = "ChkBoxCold";
+            this.ChkBoxCold.Size = new System.Drawing.Size(208, 26);
+            this.ChkBoxCold.TabIndex = 18;
+            this.ChkBoxCold.Text = "هل تعاني من نزلات برد؟";
+            this.ChkBoxCold.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChkBoxCold.UncheckedState.BorderRadius = 1;
+            this.ChkBoxCold.UncheckedState.BorderThickness = 1;
+            this.ChkBoxCold.UncheckedState.FillColor = System.Drawing.Color.HotPink;
             // 
-            // guna2CheckBox3
+            // ChkBoxSorethroat
             // 
-            this.guna2CheckBox3.AutoSize = true;
-            this.guna2CheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox3.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox3.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox3.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2CheckBox3.ForeColor = System.Drawing.Color.DeepPink;
-            this.guna2CheckBox3.Location = new System.Drawing.Point(483, 237);
-            this.guna2CheckBox3.Name = "guna2CheckBox3";
-            this.guna2CheckBox3.Size = new System.Drawing.Size(237, 26);
-            this.guna2CheckBox3.TabIndex = 19;
-            this.guna2CheckBox3.Text = "هل تعاني من التهـاب الحـلق؟";
-            this.guna2CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CheckBox3.UncheckedState.BorderRadius = 1;
-            this.guna2CheckBox3.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox3.UncheckedState.FillColor = System.Drawing.Color.HotPink;
+            this.ChkBoxSorethroat.AutoSize = true;
+            this.ChkBoxSorethroat.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxSorethroat.CheckedState.BorderRadius = 0;
+            this.ChkBoxSorethroat.CheckedState.BorderThickness = 0;
+            this.ChkBoxSorethroat.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxSorethroat.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ChkBoxSorethroat.ForeColor = System.Drawing.Color.DeepPink;
+            this.ChkBoxSorethroat.Location = new System.Drawing.Point(483, 237);
+            this.ChkBoxSorethroat.Name = "ChkBoxSorethroat";
+            this.ChkBoxSorethroat.Size = new System.Drawing.Size(237, 26);
+            this.ChkBoxSorethroat.TabIndex = 19;
+            this.ChkBoxSorethroat.Text = "هل تعاني من التهـاب الحـلق؟";
+            this.ChkBoxSorethroat.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChkBoxSorethroat.UncheckedState.BorderRadius = 1;
+            this.ChkBoxSorethroat.UncheckedState.BorderThickness = 1;
+            this.ChkBoxSorethroat.UncheckedState.FillColor = System.Drawing.Color.HotPink;
             // 
-            // guna2CheckBox4
+            // ChkBoxBodyPain
             // 
-            this.guna2CheckBox4.AutoSize = true;
-            this.guna2CheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox4.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox4.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox4.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2CheckBox4.ForeColor = System.Drawing.Color.DeepPink;
-            this.guna2CheckBox4.Location = new System.Drawing.Point(483, 272);
-            this.guna2CheckBox4.Name = "guna2CheckBox4";
-            this.guna2CheckBox4.Size = new System.Drawing.Size(236, 26);
-            this.guna2CheckBox4.TabIndex = 20;
-            this.guna2CheckBox4.Text = "هل تعاني من آلم في الجسم؟";
-            this.guna2CheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CheckBox4.UncheckedState.BorderRadius = 1;
-            this.guna2CheckBox4.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox4.UncheckedState.FillColor = System.Drawing.Color.HotPink;
+            this.ChkBoxBodyPain.AutoSize = true;
+            this.ChkBoxBodyPain.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxBodyPain.CheckedState.BorderRadius = 0;
+            this.ChkBoxBodyPain.CheckedState.BorderThickness = 0;
+            this.ChkBoxBodyPain.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxBodyPain.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ChkBoxBodyPain.ForeColor = System.Drawing.Color.DeepPink;
+            this.ChkBoxBodyPain.Location = new System.Drawing.Point(483, 272);
+            this.ChkBoxBodyPain.Name = "ChkBoxBodyPain";
+            this.ChkBoxBodyPain.Size = new System.Drawing.Size(236, 26);
+            this.ChkBoxBodyPain.TabIndex = 20;
+            this.ChkBoxBodyPain.Text = "هل تعاني من آلم في الجسم؟";
+            this.ChkBoxBodyPain.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChkBoxBodyPain.UncheckedState.BorderRadius = 1;
+            this.ChkBoxBodyPain.UncheckedState.BorderThickness = 1;
+            this.ChkBoxBodyPain.UncheckedState.FillColor = System.Drawing.Color.HotPink;
             // 
-            // guna2CheckBox5
+            // ChkBoxHeadache
             // 
-            this.guna2CheckBox5.AutoSize = true;
-            this.guna2CheckBox5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox5.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox5.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox5.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2CheckBox5.ForeColor = System.Drawing.Color.DeepPink;
-            this.guna2CheckBox5.Location = new System.Drawing.Point(277, 272);
-            this.guna2CheckBox5.Name = "guna2CheckBox5";
-            this.guna2CheckBox5.Size = new System.Drawing.Size(169, 26);
-            this.guna2CheckBox5.TabIndex = 21;
-            this.guna2CheckBox5.Text = "هل تشعر بالصداع؟";
-            this.guna2CheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CheckBox5.UncheckedState.BorderRadius = 1;
-            this.guna2CheckBox5.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox5.UncheckedState.FillColor = System.Drawing.Color.HotPink;
+            this.ChkBoxHeadache.AutoSize = true;
+            this.ChkBoxHeadache.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxHeadache.CheckedState.BorderRadius = 0;
+            this.ChkBoxHeadache.CheckedState.BorderThickness = 0;
+            this.ChkBoxHeadache.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxHeadache.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ChkBoxHeadache.ForeColor = System.Drawing.Color.DeepPink;
+            this.ChkBoxHeadache.Location = new System.Drawing.Point(277, 272);
+            this.ChkBoxHeadache.Name = "ChkBoxHeadache";
+            this.ChkBoxHeadache.Size = new System.Drawing.Size(169, 26);
+            this.ChkBoxHeadache.TabIndex = 21;
+            this.ChkBoxHeadache.Text = "هل تشعر بالصداع؟";
+            this.ChkBoxHeadache.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChkBoxHeadache.UncheckedState.BorderRadius = 1;
+            this.ChkBoxHeadache.UncheckedState.BorderThickness = 1;
+            this.ChkBoxHeadache.UncheckedState.FillColor = System.Drawing.Color.HotPink;
             // 
-            // guna2CheckBox6
+            // ChkBoxFatigue
             // 
-            this.guna2CheckBox6.AutoSize = true;
-            this.guna2CheckBox6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox6.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox6.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox6.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2CheckBox6.ForeColor = System.Drawing.Color.DeepPink;
-            this.guna2CheckBox6.Location = new System.Drawing.Point(38, 237);
-            this.guna2CheckBox6.Name = "guna2CheckBox6";
-            this.guna2CheckBox6.Size = new System.Drawing.Size(207, 26);
-            this.guna2CheckBox6.TabIndex = 22;
-            this.guna2CheckBox6.Text = "هل تشعر بالإرهــــــاق؟";
-            this.guna2CheckBox6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CheckBox6.UncheckedState.BorderRadius = 1;
-            this.guna2CheckBox6.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox6.UncheckedState.FillColor = System.Drawing.Color.HotPink;
+            this.ChkBoxFatigue.AutoSize = true;
+            this.ChkBoxFatigue.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxFatigue.CheckedState.BorderRadius = 0;
+            this.ChkBoxFatigue.CheckedState.BorderThickness = 0;
+            this.ChkBoxFatigue.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxFatigue.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ChkBoxFatigue.ForeColor = System.Drawing.Color.DeepPink;
+            this.ChkBoxFatigue.Location = new System.Drawing.Point(38, 237);
+            this.ChkBoxFatigue.Name = "ChkBoxFatigue";
+            this.ChkBoxFatigue.Size = new System.Drawing.Size(207, 26);
+            this.ChkBoxFatigue.TabIndex = 22;
+            this.ChkBoxFatigue.Text = "هل تشعر بالإرهــــــاق؟";
+            this.ChkBoxFatigue.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChkBoxFatigue.UncheckedState.BorderRadius = 1;
+            this.ChkBoxFatigue.UncheckedState.BorderThickness = 1;
+            this.ChkBoxFatigue.UncheckedState.FillColor = System.Drawing.Color.HotPink;
             // 
-            // guna2CheckBox7
+            // ChkBoxHeat
             // 
-            this.guna2CheckBox7.AutoSize = true;
-            this.guna2CheckBox7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox7.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox7.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox7.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2CheckBox7.ForeColor = System.Drawing.Color.DeepPink;
-            this.guna2CheckBox7.Location = new System.Drawing.Point(38, 307);
-            this.guna2CheckBox7.Name = "guna2CheckBox7";
-            this.guna2CheckBox7.Size = new System.Drawing.Size(205, 26);
-            this.guna2CheckBox7.TabIndex = 23;
-            this.guna2CheckBox7.Text = "هــل لـديــك حــــرارة؟";
-            this.guna2CheckBox7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CheckBox7.UncheckedState.BorderRadius = 1;
-            this.guna2CheckBox7.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox7.UncheckedState.FillColor = System.Drawing.Color.HotPink;
+            this.ChkBoxHeat.AutoSize = true;
+            this.ChkBoxHeat.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxHeat.CheckedState.BorderRadius = 0;
+            this.ChkBoxHeat.CheckedState.BorderThickness = 0;
+            this.ChkBoxHeat.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ChkBoxHeat.Font = new System.Drawing.Font("Almohanad long kaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ChkBoxHeat.ForeColor = System.Drawing.Color.DeepPink;
+            this.ChkBoxHeat.Location = new System.Drawing.Point(38, 307);
+            this.ChkBoxHeat.Name = "ChkBoxHeat";
+            this.ChkBoxHeat.Size = new System.Drawing.Size(205, 26);
+            this.ChkBoxHeat.TabIndex = 23;
+            this.ChkBoxHeat.Text = "هــل لـديــك حــــرارة؟";
+            this.ChkBoxHeat.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChkBoxHeat.UncheckedState.BorderRadius = 1;
+            this.ChkBoxHeat.UncheckedState.BorderThickness = 1;
+            this.ChkBoxHeat.UncheckedState.FillColor = System.Drawing.Color.HotPink;
             // 
-            // BtnReg
+            // BtnClearFields
             // 
-            this.BtnReg.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
-            this.BtnReg.BorderRadius = 5;
-            this.BtnReg.BorderThickness = 1;
-            this.BtnReg.CheckedState.Parent = this.BtnReg;
-            this.BtnReg.CustomImages.Parent = this.BtnReg;
-            this.BtnReg.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
-            this.BtnReg.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.BtnReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(243)))));
-            this.BtnReg.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
-            this.BtnReg.HoverState.ForeColor = System.Drawing.Color.White;
-            this.BtnReg.HoverState.Parent = this.BtnReg;
-            this.BtnReg.Location = new System.Drawing.Point(568, 349);
-            this.BtnReg.Name = "BtnReg";
-            this.BtnReg.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
-            this.BtnReg.ShadowDecoration.Parent = this.BtnReg;
-            this.BtnReg.Size = new System.Drawing.Size(208, 45);
-            this.BtnReg.TabIndex = 24;
-            this.BtnReg.Text = "إلغـاء";
+            this.BtnClearFields.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
+            this.BtnClearFields.BorderRadius = 5;
+            this.BtnClearFields.BorderThickness = 1;
+            this.BtnClearFields.CheckedState.Parent = this.BtnClearFields;
+            this.BtnClearFields.CustomImages.Parent = this.BtnClearFields;
+            this.BtnClearFields.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
+            this.BtnClearFields.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BtnClearFields.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(243)))));
+            this.BtnClearFields.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
+            this.BtnClearFields.HoverState.ForeColor = System.Drawing.Color.White;
+            this.BtnClearFields.HoverState.Parent = this.BtnClearFields;
+            this.BtnClearFields.Location = new System.Drawing.Point(568, 349);
+            this.BtnClearFields.Name = "BtnClearFields";
+            this.BtnClearFields.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
+            this.BtnClearFields.ShadowDecoration.Parent = this.BtnClearFields;
+            this.BtnClearFields.Size = new System.Drawing.Size(208, 45);
+            this.BtnClearFields.TabIndex = 24;
+            this.BtnClearFields.Text = "إلغـاء";
+            this.BtnClearFields.Click += new System.EventHandler(this.BtnClearFields_Click);
             // 
-            // guna2Button1
+            // BtnSaveData
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
-            this.guna2Button1.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(243)))));
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(354, 349);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(208, 45);
-            this.guna2Button1.TabIndex = 25;
-            this.guna2Button1.Text = "حفظ";
+            this.BtnSaveData.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
+            this.BtnSaveData.BorderRadius = 5;
+            this.BtnSaveData.BorderThickness = 1;
+            this.BtnSaveData.CheckedState.Parent = this.BtnSaveData;
+            this.BtnSaveData.CustomImages.Parent = this.BtnSaveData;
+            this.BtnSaveData.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(89)))), ((int)(((byte)(158)))));
+            this.BtnSaveData.Font = new System.Drawing.Font("AdvertisingBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BtnSaveData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(243)))));
+            this.BtnSaveData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(88)))));
+            this.BtnSaveData.HoverState.ForeColor = System.Drawing.Color.White;
+            this.BtnSaveData.HoverState.Parent = this.BtnSaveData;
+            this.BtnSaveData.Location = new System.Drawing.Point(354, 349);
+            this.BtnSaveData.Name = "BtnSaveData";
+            this.BtnSaveData.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
+            this.BtnSaveData.ShadowDecoration.Parent = this.BtnSaveData;
+            this.BtnSaveData.Size = new System.Drawing.Size(208, 45);
+            this.BtnSaveData.TabIndex = 25;
+            this.BtnSaveData.Text = "حفظ";
+            this.BtnSaveData.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // lblPstientFrmMsgBox
+            // 
+            this.lblPstientFrmMsgBox.Location = new System.Drawing.Point(5, 349);
+            this.lblPstientFrmMsgBox.Name = "lblPstientFrmMsgBox";
+            this.lblPstientFrmMsgBox.Size = new System.Drawing.Size(345, 45);
+            this.lblPstientFrmMsgBox.TabIndex = 27;
+            this.lblPstientFrmMsgBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmPatientData
             // 
@@ -400,22 +420,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(237)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(768, 397);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.BtnReg);
-            this.Controls.Add(this.guna2CheckBox7);
-            this.Controls.Add(this.guna2CheckBox6);
-            this.Controls.Add(this.guna2CheckBox5);
-            this.Controls.Add(this.guna2CheckBox2);
-            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.lblPstientFrmMsgBox);
+            this.Controls.Add(this.BtnSaveData);
+            this.Controls.Add(this.BtnClearFields);
+            this.Controls.Add(this.ChkBoxHeat);
+            this.Controls.Add(this.ChkBoxFatigue);
+            this.Controls.Add(this.ChkBoxHeadache);
+            this.Controls.Add(this.ChkBoxCold);
+            this.Controls.Add(this.ChkBoxCough);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.PatientPictureBox);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.TxtLoginUserName);
-            this.Controls.Add(this.guna2CheckBox4);
-            this.Controls.Add(this.guna2CheckBox3);
+            this.Controls.Add(this.TxtBoxChronicDiseases);
+            this.Controls.Add(this.TxtMidName);
+            this.Controls.Add(this.TxtLastName);
+            this.Controls.Add(this.TxtPatientAddress);
+            this.Controls.Add(this.TxtFirstName);
+            this.Controls.Add(this.ChkBoxBodyPain);
+            this.Controls.Add(this.ChkBoxSorethroat);
             this.Font = new System.Drawing.Font("AdvertisingExtraBold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "FrmPatientData";
@@ -430,21 +451,22 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox TxtLoginUserName;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox TxtFirstName;
+        private Guna.UI2.WinForms.Guna2TextBox TxtPatientAddress;
+        private Guna.UI2.WinForms.Guna2TextBox TxtLastName;
+        private Guna.UI2.WinForms.Guna2TextBox TxtMidName;
+        private Guna.UI2.WinForms.Guna2TextBox TxtBoxChronicDiseases;
         private Guna.UI2.WinForms.Guna2CirclePictureBox PatientPictureBox;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox3;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox4;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox5;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox6;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox7;
-        private Guna.UI2.WinForms.Guna2Button BtnReg;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2CheckBox ChkBoxCough;
+        private Guna.UI2.WinForms.Guna2CheckBox ChkBoxCold;
+        private Guna.UI2.WinForms.Guna2CheckBox ChkBoxSorethroat;
+        private Guna.UI2.WinForms.Guna2CheckBox ChkBoxBodyPain;
+        private Guna.UI2.WinForms.Guna2CheckBox ChkBoxHeadache;
+        private Guna.UI2.WinForms.Guna2CheckBox ChkBoxFatigue;
+        private Guna.UI2.WinForms.Guna2CheckBox ChkBoxHeat;
+        private Guna.UI2.WinForms.Guna2Button BtnClearFields;
+        private Guna.UI2.WinForms.Guna2Button BtnSaveData;
+        private System.Windows.Forms.Label lblPstientFrmMsgBox;
     }
 }

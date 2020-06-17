@@ -48,13 +48,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.Core, Version=1.11.5.2, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
-    <Reference Include="BunifuDataViz">
-      <HintPath>Q:\Compressed 19052020\Bunifu_UI_WinForms_v1.11.5.21_(19_Sep_2019)_+_Dataviz_Advanced_v1.1.1.5  irdevelopers.com\Bunifu Dataviz Advanced 1.1.1.5\BunifuDataViz.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>Q:\Compressed 19052020\Bunifu_UI_WinForms_v1.11.5.21_(19_Sep_2019)_+_Dataviz_Advanced_v1.1.1.5  irdevelopers.com\Bunifu UI WinForms 1.11.5.21\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>

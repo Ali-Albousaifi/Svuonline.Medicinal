@@ -310,7 +310,7 @@
             this.TxtLoginPassword.BorderRadius = 2;
             this.TxtLoginPassword.Cursor = System.Windows.Forms.Cursors.Default;
             this.PanelTransition.SetDecoration(this.TxtLoginPassword, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TxtLoginPassword.DefaultText = "asd";
+            this.TxtLoginPassword.DefaultText = "";
             this.TxtLoginPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TxtLoginPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtLoginPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -333,7 +333,6 @@
             this.TxtLoginPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
             this.TxtLoginPassword.PlaceholderText = "كلمة المرور";
             this.TxtLoginPassword.SelectedText = "";
-            this.TxtLoginPassword.SelectionStart = 3;
             this.TxtLoginPassword.ShadowDecoration.Parent = this.TxtLoginPassword;
             this.TxtLoginPassword.Size = new System.Drawing.Size(270, 35);
             this.TxtLoginPassword.TabIndex = 11;
@@ -352,7 +351,7 @@
             this.TxtLoginUserName.BorderRadius = 2;
             this.TxtLoginUserName.Cursor = System.Windows.Forms.Cursors.Default;
             this.PanelTransition.SetDecoration(this.TxtLoginUserName, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TxtLoginUserName.DefaultText = "ali@tromail.com";
+            this.TxtLoginUserName.DefaultText = "";
             this.TxtLoginUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TxtLoginUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtLoginUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -373,7 +372,6 @@
             this.TxtLoginUserName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(236)))));
             this.TxtLoginUserName.PlaceholderText = "البريد الإلكتروني";
             this.TxtLoginUserName.SelectedText = "";
-            this.TxtLoginUserName.SelectionStart = 15;
             this.TxtLoginUserName.ShadowDecoration.Parent = this.TxtLoginUserName;
             this.TxtLoginUserName.Size = new System.Drawing.Size(270, 35);
             this.TxtLoginUserName.TabIndex = 9;

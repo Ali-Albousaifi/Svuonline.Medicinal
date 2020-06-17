@@ -411,8 +411,8 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
                 {
                     ClsUserAccountsServices.UserCanLogin = false;
                     lblMsgBox.Text = "دخــــــول";
-                    lblMsgBox.BackColor = ColorTranslator.FromHtml("#fff5cc");
-                    lblMsgBox.ForeColor = ColorTranslator.FromHtml("#856404");
+                    lblMsgBox.BackColor = ColorTranslator.FromHtml("#deffef");
+                    lblMsgBox.ForeColor = ColorTranslator.FromHtml("#009e52");
                     lblMsgBox.Visible = true;
                     BtnLogin.Focus();
                     await Task.Delay(3000);
