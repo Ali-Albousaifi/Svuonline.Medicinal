@@ -34,6 +34,8 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
         {
             public static Color color1 = Color.FromArgb(121, 80, 199);
             public static Color color2 = Color.FromArgb(249, 88, 155);
+            public static Color color3 = Color.FromArgb(0, 120, 215);
+
         }
         private void ActivateButton(object senderBtn, Color color)
         {
@@ -97,6 +99,13 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
             currentBtn.IconColor = Color.FromArgb(222, 212, 245);
             iconCurrentChildForm.IconColor = Color.FromArgb(222, 212, 245);
             OpenChildForm(new FrmPatientData());
+        }
+        private void BtnReports_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            currentBtn.IconColor = Color.FromArgb(0, 120, 215);
+            iconCurrentChildForm.IconColor = Color.FromArgb(0, 120, 215);
+            OpenChildForm(new FrmReports());
         }
         private void BtnUserInfo_Click(object sender, EventArgs e)
         {

@@ -31,20 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainApp));
             this.SideMenuPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.BtnUserInfo = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.BtnReports = new FontAwesome.Sharp.IconButton();
             this.BtnPatientData = new FontAwesome.Sharp.IconButton();
             this.LogoPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.BtnHome = new System.Windows.Forms.PictureBox();
             this.TitleBarPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.BtnExit = new Guna.UI2.WinForms.Guna2Button();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.FrmMainDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.FrmMainShadowForm = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.FrmMainElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ShadowPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelDesktop = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnExit = new Guna.UI2.WinForms.Guna2Button();
             this.SideMenuPanel.SuspendLayout();
             this.LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).BeginInit();
@@ -57,7 +58,8 @@
             // SideMenuPanel
             // 
             this.SideMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(178)))));
-            this.SideMenuPanel.Controls.Add(this.BtnUserInfo);
+            this.SideMenuPanel.Controls.Add(this.iconButton1);
+            this.SideMenuPanel.Controls.Add(this.BtnReports);
             this.SideMenuPanel.Controls.Add(this.BtnPatientData);
             this.SideMenuPanel.Controls.Add(this.LogoPanel);
             this.SideMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -68,30 +70,55 @@
             this.SideMenuPanel.Size = new System.Drawing.Size(220, 491);
             this.SideMenuPanel.TabIndex = 1;
             // 
-            // BtnUserInfo
+            // iconButton1
             // 
-            this.BtnUserInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnUserInfo.FlatAppearance.BorderSize = 0;
-            this.BtnUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUserInfo.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.BtnUserInfo.Font = new System.Drawing.Font("Almohanad long kaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.BtnUserInfo.ForeColor = System.Drawing.Color.Snow;
-            this.BtnUserInfo.IconChar = FontAwesome.Sharp.IconChar.IdCardAlt;
-            this.BtnUserInfo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
-            this.BtnUserInfo.IconSize = 36;
-            this.BtnUserInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUserInfo.Location = new System.Drawing.Point(0, 200);
-            this.BtnUserInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnUserInfo.Name = "BtnUserInfo";
-            this.BtnUserInfo.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.BtnUserInfo.Rotation = 0D;
-            this.BtnUserInfo.Size = new System.Drawing.Size(220, 60);
-            this.BtnUserInfo.TabIndex = 2;
-            this.BtnUserInfo.Text = "معلومات المستخدم";
-            this.BtnUserInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUserInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnUserInfo.UseVisualStyleBackColor = true;
-            this.BtnUserInfo.Click += new System.EventHandler(this.BtnUserInfo_Click);
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.Font = new System.Drawing.Font("Almohanad long kaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.iconButton1.ForeColor = System.Drawing.Color.Snow;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.IdCardAlt;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
+            this.iconButton1.IconSize = 36;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(0, 260);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(220, 60);
+            this.iconButton1.TabIndex = 3;
+            this.iconButton1.Text = "معلومات المستخدم";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.BtnUserInfo_Click);
+            // 
+            // BtnReports
+            // 
+            this.BtnReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnReports.FlatAppearance.BorderSize = 0;
+            this.BtnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReports.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.BtnReports.Font = new System.Drawing.Font("Almohanad long kaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BtnReports.ForeColor = System.Drawing.Color.Snow;
+            this.BtnReports.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.BtnReports.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
+            this.BtnReports.IconSize = 36;
+            this.BtnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnReports.Location = new System.Drawing.Point(0, 200);
+            this.BtnReports.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnReports.Name = "BtnReports";
+            this.BtnReports.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.BtnReports.Rotation = 0D;
+            this.BtnReports.Size = new System.Drawing.Size(220, 60);
+            this.BtnReports.TabIndex = 2;
+            this.BtnReports.Text = " التقــاريـر";
+            this.BtnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnReports.UseVisualStyleBackColor = true;
+            this.BtnReports.Click += new System.EventHandler(this.BtnReports_Click);
             // 
             // BtnPatientData
             // 
@@ -153,23 +180,32 @@
             this.TitleBarPanel.Size = new System.Drawing.Size(784, 80);
             this.TitleBarPanel.TabIndex = 2;
             // 
-            // iconCurrentChildForm
+            // BtnExit
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
-            this.iconCurrentChildForm.IconSize = 40;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(724, 19);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
+            this.BtnExit.Animated = true;
+            this.BtnExit.BorderColor = System.Drawing.Color.White;
+            this.BtnExit.CheckedState.Parent = this.BtnExit;
+            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnExit.CustomImages.Parent = this.BtnExit;
+            this.BtnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
+            this.BtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnExit.ForeColor = System.Drawing.Color.White;
+            this.BtnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
+            this.BtnExit.HoverState.Parent = this.BtnExit;
+            this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
+            this.BtnExit.ImageSize = new System.Drawing.Size(18, 18);
+            this.BtnExit.Location = new System.Drawing.Point(9, 8);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
+            this.BtnExit.ShadowDecoration.Parent = this.BtnExit;
+            this.BtnExit.Size = new System.Drawing.Size(22, 22);
+            this.BtnExit.TabIndex = 15;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.Font = new System.Drawing.Font("AdvertisingExtraBold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Azure;
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Snow;
             this.lblTitleChildForm.Location = new System.Drawing.Point(37, 19);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
             this.lblTitleChildForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -177,6 +213,19 @@
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "الصفحة الرئيسية";
             this.lblTitleChildForm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(0)))), ((int)(((byte)(112)))));
+            this.iconCurrentChildForm.IconSize = 50;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(724, 14);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(50, 50);
+            this.iconCurrentChildForm.TabIndex = 0;
+            this.iconCurrentChildForm.TabStop = false;
             // 
             // FrmMainDragControl
             // 
@@ -219,28 +268,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // BtnExit
-            // 
-            this.BtnExit.Animated = true;
-            this.BtnExit.BorderColor = System.Drawing.Color.White;
-            this.BtnExit.CheckedState.Parent = this.BtnExit;
-            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnExit.CustomImages.Parent = this.BtnExit;
-            this.BtnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
-            this.BtnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnExit.ForeColor = System.Drawing.Color.White;
-            this.BtnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
-            this.BtnExit.HoverState.Parent = this.BtnExit;
-            this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
-            this.BtnExit.ImageSize = new System.Drawing.Size(18, 18);
-            this.BtnExit.Location = new System.Drawing.Point(9, 8);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(213)))), ((int)(((byte)(207)))));
-            this.BtnExit.ShadowDecoration.Parent = this.BtnExit;
-            this.BtnExit.Size = new System.Drawing.Size(22, 22);
-            this.BtnExit.TabIndex = 15;
-            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
             // FrmMainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
@@ -275,7 +302,7 @@
         private Guna.UI2.WinForms.Guna2GradientPanel SideMenuPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel LogoPanel;
         private System.Windows.Forms.PictureBox BtnHome;
-        private FontAwesome.Sharp.IconButton BtnUserInfo;
+        private FontAwesome.Sharp.IconButton BtnReports;
         private FontAwesome.Sharp.IconButton BtnPatientData;
         private Guna.UI2.WinForms.Guna2GradientPanel TitleBarPanel;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
@@ -287,5 +314,6 @@
         private Guna.UI2.WinForms.Guna2GradientPanel ShadowPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button BtnExit;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

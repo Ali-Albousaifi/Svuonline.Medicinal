@@ -16,5 +16,24 @@ namespace Svuonline.Medicinal.Desktop.CoVID19
         {
             InitializeComponent();
         }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            String ImageLocation = "";
+            try
+            {
+                OpenFileDialog OpenFileDialogObj = new OpenFileDialog();
+                OpenFileDialogObj.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;*.png)|*.jpg;*.jpeg;.*.gif;*.png";
+                if (OpenFileDialogObj.ShowDialog() == DialogResult.OK)
+                {
+                    ImageLocation = OpenFileDialogObj.FileName;
+                    PatientPictureBox.Image = new Bitmap(OpenFileDialogObj.FileName);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("حدث خطاء أثناء تحميل الصورة", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
